@@ -1,0 +1,35 @@
+img {
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    margin: auto;
+}
+.centered{
+    width: 70%;
+}
+.slick-center {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.slides {
+    position: relative;
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    background-color: #505d77;
+    border-radius: 10px;
+}
+.slick-prev {
+    left: 1% !important;
+    z-index: 1;
+}
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
+}
+
