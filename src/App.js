@@ -7,6 +7,7 @@ import CoverImage from "./Components/HomeScreen/CoverImage";
 import Responsive from "./Components/Slider/slider";
 import Footer from "./Components/Footer/Footer";
 import HomeScreenBtn from "./Components/Button/HomeScreenBtn";
+import Intro from "./Components/HomeScreen/intro";
 
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -24,6 +25,32 @@ class App extends Component {
 				{ name: "Tour & Travels", link: "#Tour" },
 				{ name: "Tutorial", link: "#Tutorial" },
 				{ name: "Contact Us", link: "#Contact" },
+			],
+			Caro: [
+				{
+					title: "Wedding Photography",
+					img: "./assets/undraw/wedding.svg",
+				},
+				{
+					title: "Beach Photography",
+					img: "./assets/undraw/beach.svg",
+				},
+				{
+					title: "Pre Wedding Shoot",
+					img: "./assets/undraw/wedding0.svg",
+				},
+				{
+					title: "Portfolio Shoot",
+					img: "./assets/undraw/influencer.svg",
+				},
+				{
+					title: "Drone Services",
+					img: "./assets/undraw/drone.svg",
+				},
+				{
+					title: "Graphics",
+					img: "./assets/undraw/walk.svg",
+				},
 			],
 			OfferImg: [
 				"./assets/Offer/1-min.png",
@@ -55,12 +82,33 @@ class App extends Component {
 			<div className="App">
 				<NavBar Tabs={this.state.Tabs} />
 				<CoverImage />
+				<div style={{ display: "flex", justifyContent: "center", margin:40 }}>
+					<HomeScreenBtn
+						Color="#2B9DB6"
+						Width={255}
+						Height={196}
+						title="Explore Us"
+					/>
+				</div>
+
+				<Responsive
+					bgColor="#EEF9FF"
+					center={false}
+					imgs={this.state.Caro}
+					textTile={true}
+					imgWidth={125}
+					imgHeight={105}
+					HomeSliderVal={6}
+				/>
+
+				<Intro/>
+
 				<div>
-					<Row xs={1} md={2} lg={3}  noGutters={true}>
+					<Row xs={1} md={2} lg={3} noGutters={true}>
 						{this.state.Services.map((item, idx) => {
 							return (
 								<Col>
-									<img src={item} alt="Images"/>
+									<img src={item} alt="Images" />
 								</Col>
 							);
 						})}
@@ -70,7 +118,8 @@ class App extends Component {
 					bgColor="white"
 					center={false}
 					imgs={this.state.OfferImg}
-					title="Offer For You"
+					textTile={false}
+					HomeSliderVal={5}
 				/>
 				<div
 					style={{
@@ -90,7 +139,7 @@ class App extends Component {
 								<img
 									src="./assets/undraw/video.svg"
 									className="VectorImg"
-                                    alt="Images"
+									alt="Images"
 								/>
 								<p className="VectorP">Best Quality</p>
 								<p>
@@ -104,7 +153,7 @@ class App extends Component {
 								<img
 									src="./assets/undraw/video.svg"
 									className="VectorImg"
-                                    alt="Images"
+									alt="Images"
 								/>
 								<p className="VectorP">Best Quality</p>
 								<p>
@@ -127,7 +176,7 @@ class App extends Component {
 								<img
 									src="./assets/undraw/video.svg"
 									className="VectorImg"
-                                    alt="Images"
+									alt="Images"
 								/>
 								<p className="VectorP">Best Quality</p>
 								<p>
@@ -141,7 +190,7 @@ class App extends Component {
 								<img
 									src="./assets/undraw/video.svg"
 									className="VectorImg"
-                                    alt="Images"
+									alt="Images"
 								/>
 								<p className="VectorP">Best Quality</p>
 								<p>
@@ -159,6 +208,9 @@ class App extends Component {
 					center={true}
 					imgs={this.state.Blogs}
 					title="latest Blog"
+					textTile={true}
+					Width="90%"
+					HomeSliderVal={3}
 				/>
 				<Footer bgColor="#6082A7" />
 			</div>
