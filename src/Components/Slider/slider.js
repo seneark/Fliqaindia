@@ -74,8 +74,23 @@ export default class Responsive extends Component {
 			],
 		};
 		return (
-			<div style={{ width: "100%",height:this.props.Height, backgroundColor: this.props.bgColor }}>
-				<h2>{this.props.title}</h2>
+			<div
+				style={{
+					width: "100%",
+					height: this.props.Height,
+					backgroundColor: this.props.bgColor,
+				}}
+			>
+				<br />
+				<h1
+					style={{
+						fontSize: 36,
+						letterSpacing: 0.5,
+						textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+					}}
+				>
+					{this.props.title}
+				</h1>
 				<br />
 				{this.props.textTile ? (
 					<div style={{ width: this.props.Width, margin: "auto" }}>
@@ -83,15 +98,19 @@ export default class Responsive extends Component {
 							{this.props.imgs.map((item, idx) => {
 								return (
 									<div>
-										<img
-											className="centered"
-											src={item.img}
-											alt="Images"
-                                            style={{
-                                                width: this.props.imgWidth,
-                                                height:this.props.imgHeight
-                                            }}
-										/>
+										<div style={{
+											maxWidth: this.props.imgWidth,
+											maxHeight: this.props.imgHeight,
+											overflowY: "hidden",
+											display:"flex",
+											justifyContent: "center"
+										}}>
+											<img
+												className="centered"
+												src={item.img}
+												alt="Images"
+											/>
+										</div>
 										<p>{item.title}</p>
 									</div>
 								);
@@ -102,13 +121,20 @@ export default class Responsive extends Component {
 					<Slider {...settings}>
 						{this.props.imgs.map((item, idx) => {
 							return (
-								<div>
+								<div
+									style={{
+										maxWidth: this.props.imgWidth,
+										maxHeight: this.props.imgHeight,
+										overflowY: "hidden",
+									}}
+								>
 									<img src={item} alt="Images" />
 								</div>
 							);
 						})}
 					</Slider>
 				)}
+				<br/>
 			</div>
 		);
 	}

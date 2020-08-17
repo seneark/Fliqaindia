@@ -5,7 +5,7 @@ const HomeScreenBtn = (props) => {
 		<div
 			style={{
 				width: props.Width,
-				height: 45,
+				height: props.Height,
 				backgroundColor: props.Color,
 				borderRadius: 32,
 				boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
@@ -15,7 +15,7 @@ const HomeScreenBtn = (props) => {
 				style={{
 					margin: "auto",
 					width: "50%",
-					padding: 10,
+					padding: props.Height/4,
 					color:"white"
 				}}
 			>

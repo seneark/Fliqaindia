@@ -1,12 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav} from 'react-bootstrap';
+import {
+	FaFacebook,
+	FaWhatsapp,
+	FaLinkedin,
+	FaInstagram,
+	FaYoutube,
+} from "react-icons/fa";
 
 const NavBar = (props) => {
         return (
             <div>
                 <Navbar collapseOnSelect expand="lg" style={{backgroundColor:'#D0E1FA'}}>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="#home">Fliqaindia</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
@@ -19,9 +26,27 @@ const NavBar = (props) => {
                             })}
                         </Nav>
                         <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
+                            <Nav.Link>
+                            <FaFacebook
+									size={27}
+									style={{ marginRight: 10 }}
+								/>
+								<FaWhatsapp
+									size={27}
+									style={{ marginRight: 10 }}
+								/>
+								<FaLinkedin
+									size={27}
+									style={{ marginRight: 10 }}
+								/>
+								<FaYoutube
+									size={27}
+									style={{ marginRight: 10 }}
+								/>
+								<FaInstagram
+									size={27}
+									style={{ marginRight: 10 }}
+								/>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

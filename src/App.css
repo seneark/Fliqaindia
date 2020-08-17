@@ -14,11 +14,12 @@
   letter-spacing: 0.42px;
   color: #000000;
   border-bottom: 0.01em solid rgba(0,0,0,0.1);
+  padding:50px ;
 }
 
 .VectorImg{
   background: transparent;
-  width: 50%;
+  width: 30%;
 }
 
 .VectorP{

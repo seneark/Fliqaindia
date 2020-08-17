@@ -60,11 +60,11 @@ class App extends Component {
 				"./assets/Offer/5-min.png",
 			],
 			Blogs: [
-				{ title: "adbfns vs f vs fv", img: "./assets/Offer/1-min.png" },
-				{ title: "adbfns vs f vs fv", img: "./assets/Offer/2-min.png" },
-				{ title: "adbfns vs f vs fv", img: "./assets/Offer/3-min.png" },
-				{ title: "adbfns vs f vs fv", img: "./assets/Offer/4-min.png" },
-				{ title: "adbfns vs f vs fv", img: "./assets/Offer/5-min.png" },
+				{ title: "Horrible Mistakes People Do In Photography", img: "./assets/blogs/girl.png" },
+				{ title: "Creative Industries are on the verge of depletion due to COVID-19", img: "./assets/blogs/dep.png" },
+				{ title: "Is covid-19 writing a new world?", img: "./assets/blogs/cinema.png" },
+				{ title: "Crop vs Full Frame – Which Camera Do You Need", img: "./assets/blogs/cam.png" },
+				{ title: "Where is Photography Banned?", img: "./assets/blogs/banCam.png" },
 			],
 			Services: [
 				"./assets/Services/1-min.png",
@@ -82,11 +82,17 @@ class App extends Component {
 			<div className="App">
 				<NavBar Tabs={this.state.Tabs} />
 				<CoverImage />
-				<div style={{ display: "flex", justifyContent: "center", margin:40 }}>
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						margin: 40,
+					}}
+				>
 					<HomeScreenBtn
 						Color="#2B9DB6"
 						Width={255}
-						Height={196}
+						Height={46}
 						title="Explore Us"
 					/>
 				</div>
@@ -96,14 +102,77 @@ class App extends Component {
 					center={false}
 					imgs={this.state.Caro}
 					textTile={true}
-					imgWidth={125}
-					imgHeight={105}
 					HomeSliderVal={6}
 				/>
 
-				<Intro/>
+				<div
+					style={{
+						backgroundImage:
+							"linear-gradient(270deg, #D5F0FF 28.34%, rgba(238, 249, 255, 0) 88.72%)",
+						height: "10vw",
+					}}
+				>
+					<div
+						style={{
+							display: "flex",
+							flexDirection: "row",
+							justifyContent: "space-between",
+							alignItems: "center",
+							width: "80%",
+						}}
+					>
+						<img
+							src="https://images.vexels.com/media/users/3/193093/isolated/preview/83f23fec75cc6474e19d33a4bec06d7d-covid-19-virus-icons-by-vexels.png"
+							alt="Virus"
+							style={{
+								width: "14vw",
+								height: "10vw",
+								margin: 0,
+								padding: 0,
+							}}
+						/>
+						<p
+							style={{
+								fontWeight: "bold",
+								fontSize: "2vw",
+								textAlign: "center",
+								padding: 10,
+							}}
+						>
+							Be Smart About where you click
+						</p>
+						<div
+							style={{
+								borderRight: "1px solid #000000",
+								height: "3.5vw"
+							}}
+						></div>
+						<p
+							style={{
+								fontWeight: "bold",
+								fontSize: "2vw",
+								textAlign: "center",
+								padding: 10,
+							}}
+						>
+							We Are Here for You
+						</p>
+					</div>
+				</div>
+
+				<Intro />
 
 				<div>
+					<h1
+						style={{
+							fontSize: 36,
+							letterSpacing: 0.5,
+							textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+						}}
+					>
+						Services We Provide
+					</h1>
+					<br />
 					<Row xs={1} md={2} lg={3} noGutters={true}>
 						{this.state.Services.map((item, idx) => {
 							return (
@@ -114,13 +183,40 @@ class App extends Component {
 						})}
 					</Row>
 				</div>
+
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						margin: 20,
+					}}
+				>
+					<HomeScreenBtn
+						Color="#565779"
+						Width={255}
+						Height={60}
+						title="Explore Us"
+					/>
+				</div>
+				<br />
+
 				<Responsive
 					bgColor="white"
 					center={false}
 					imgs={this.state.OfferImg}
 					textTile={false}
 					HomeSliderVal={5}
+					title="Offers For You"
 				/>
+				<h1
+					style={{
+						fontSize: 36,
+						letterSpacing: 0.5,
+						textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+					}}
+				>
+					Our Key Features
+				</h1>
 				<div
 					style={{
 						backgroundImage:
@@ -151,16 +247,17 @@ class App extends Component {
 							</Col>
 							<Col className="Col">
 								<img
-									src="./assets/undraw/video.svg"
+									src="./assets/undraw/droneDelivery.svg"
 									className="VectorImg"
 									alt="Images"
 								/>
-								<p className="VectorP">Best Quality</p>
+								<p className="VectorP">Hassle free Delivery</p>
 								<p>
-									The best way to ensure sustainability for
-									Fliqaindia is to deliver the highest
-									standard of its goods and services. Price
-									over quantity is our priority
+									We are now eligible for instant delivery.
+									Fortunately, Fliqaindia typically takes on
+									the complexities of the design cycle more
+									than gladly, because we know what our
+									customers want.
 								</p>
 							</Col>
 						</Row>
@@ -174,30 +271,32 @@ class App extends Component {
 								}}
 							>
 								<img
-									src="./assets/undraw/video.svg"
+									src="./assets/undraw/celebration.svg"
 									className="VectorImg"
 									alt="Images"
 								/>
-								<p className="VectorP">Best Quality</p>
+								<p className="VectorP">Customer Satisfaction</p>
 								<p>
-									The best way to ensure sustainability for
-									Fliqaindia is to deliver the highest
-									standard of its goods and services. Price
-									over quantity is our priority
+									Loyalty contributes to continuing
+									fulfillment. Fliqaindia therefore considers
+									customer satisfaction to be its top
+									priority. What we do highlight more than
+									what we speak.
 								</p>
 							</Col>
 							<Col className="Col">
 								<img
-									src="./assets/undraw/video.svg"
+									src="./assets/undraw/payment.svg"
 									className="VectorImg"
 									alt="Images"
 								/>
-								<p className="VectorP">Best Quality</p>
+								<p className="VectorP">Secure Payment</p>
 								<p>
-									The best way to ensure sustainability for
-									Fliqaindia is to deliver the highest
-									standard of its goods and services. Price
-									over quantity is our priority
+									Using a skilled firm by your side will save
+									the expense of hiring a custom photographer
+									per case and client demand. At Fliqaindia,
+									we work according to your priorities and
+									restrictions.
 								</p>
 							</Col>
 						</Row>
@@ -207,10 +306,11 @@ class App extends Component {
 					bgColor="rgba(169, 194, 217, 0.83)"
 					center={true}
 					imgs={this.state.Blogs}
-					title="latest Blog"
+					title="Latest Blog"
 					textTile={true}
 					Width="90%"
 					HomeSliderVal={3}
+					imgHeight={250}
 				/>
 				<Footer bgColor="#6082A7" />
 			</div>
