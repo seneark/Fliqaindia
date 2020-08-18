@@ -21,8 +21,7 @@ function CoverImage(props) {
                             position: 'absolute',
                             top:"40%",
                             left:"5%",
-                            fontWeight:'bold'
-                        }}>Fliqaindia for<br/> <span style={{color: "#2559BD"}}>Photography</span>
+                        }}><h1>Fliqaindia for<br/> <span style={{color: "#2559BD"}}>Photography</span></h1>
                         </div>
                     </div> :
                     <div className="container-fluid">
@@ -46,10 +45,10 @@ function CoverImage(props) {
                         </div>
                         <div className="RowButtons">
                             <span className="ButtonHeading">Popular</span>
-                            <a className="SideButtons">Logo Design</a>
-                            <a className="SideButtons">Website Design</a>
-                            <a className="SideButtons">Brochure</a>
-                            <a className="SideButtons">Others</a>
+                            <a href="#Home" className="SideButtons">Logo Design</a>
+                            <a href="#Home" className="SideButtons">Website Design</a>
+                            <a href="#Home" className="SideButtons">Brochure</a>
+                            <a href="#Home" className="SideButtons">Others</a>
                         </div>
                     </div>
             }

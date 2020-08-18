@@ -8,6 +8,7 @@ import Responsive from "./Components/Slider/slider";
 import Footer from "./Components/Footer/Footer";
 import HomeScreenBtn from "./Components/Button/HomeScreenBtn";
 import Intro from "./Components/HomeScreen/intro";
+import Tenstim from "./Components/HomeScreen/Testimony";
 
 import { Row, Col, Container } from "react-bootstrap";
 
@@ -122,7 +123,7 @@ class App extends Component {
 						}}
 					>
 						<img
-							src="https://images.vexels.com/media/users/3/193093/isolated/preview/83f23fec75cc6474e19d33a4bec06d7d-covid-19-virus-icons-by-vexels.png"
+							src={"https://images.vexels.com/media/users/3/193093/isolated/preview/83f23fec75cc6474e19d33a4bec06d7d-covid-19-virus-icons-by-vexels.png"}
 							alt="Virus"
 							style={{
 								width: "14vw",
@@ -133,7 +134,7 @@ class App extends Component {
 						/>
 						<p
 							style={{
-								fontWeight: "bold",
+								fontWeight: "500",
 								fontSize: "2vw",
 								textAlign: "center",
 								padding: 10,
@@ -149,7 +150,7 @@ class App extends Component {
 						></div>
 						<p
 							style={{
-								fontWeight: "bold",
+								fontWeight: "500",
 								fontSize: "2vw",
 								textAlign: "center",
 								padding: 10,
@@ -312,6 +313,7 @@ class App extends Component {
 					HomeSliderVal={3}
 					imgHeight={250}
 				/>
+				<Tenstim/>
 				<Footer bgColor="#6082A7" />
 			</div>
 		);

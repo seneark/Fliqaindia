@@ -1,0 +1,19 @@
+.Letter {
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+.TesHead {
+    font-weight: 400;
+    font-size: 1.8vw;
+	height: 8vw;
+}
+.TesHeadSmall {
+    font-weight: 400;
+    font-size: 1.8vw;
+}
+.ProfImg {
+	width: 12vw;
+}
+.ProfBig {
+	margin-bottom: 55px;
+}
