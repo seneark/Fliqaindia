@@ -4,16 +4,17 @@ import {useMediaQuery} from 'react-responsive';
 import {FaSearch} from 'react-icons/fa'
 
 function CoverImage(props) {
-    const isPortrait =useMediaQuery({ query: '(max-width: 1224px)' })
-
+    const isTabletOrMobileDevice =useMediaQuery({ query: '(max-width: 1224px)' })
+    const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
     return (
         <div>
             {
-                isPortrait ?
+                isTabletOrMobileDevice ?
                     <div className="container-fluid" >
                         <img src="./assets/Carousel2.png" alt="Snow" style={{
                             width: "130%",
-                            height: "350px",
+                            height: isPortrait?null:"650px",
+                            minHeight:"350px",
                             marginLeft: "-40px",
                             marginTop:-10
                         }}/>
@@ -27,9 +28,10 @@ function CoverImage(props) {
                     <div className="container-fluid">
                         <img src="./assets/Carousel2.png" alt="Snow" style={{
                             width: "100vw",
-                            height: window.innerWidth < 1235 ? 700 : window.innerHeight,
+                            height:window.innerWeight,
                             marginLeft: "-20px",
-                            marginTop:-10
+                            marginTop:-10,
+                            maxHeight:window.innerHeight
                         }}/>
                         <div className="heading">Fliqaindia for <span style={{color: "#2559BD"}}>Photography</span>
                         </div>
