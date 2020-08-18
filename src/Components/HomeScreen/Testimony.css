@@ -7,13 +7,22 @@
     font-size: 1.8vw;
 	height: 8vw;
 }
-.TesHeadSmall {
-    font-weight: 400;
-    font-size: 1.8vw;
-}
 .ProfImg {
 	width: 12vw;
 }
 .ProfBig {
 	margin-bottom: 55px;
+}
+
+
+.TesHeadSmall {
+    font-weight: 400;
+    font-size: 3.2vw;
+}
+.LetterSmall {
+    font-weight: 300;
+    font-size: 3vw;
+}
+.ProfImgSmall {
+	width: 27vw;
 }

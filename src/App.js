@@ -177,7 +177,7 @@ class App extends Component {
 					<Row xs={1} md={2} lg={3} noGutters={true}>
 						{this.state.Services.map((item, idx) => {
 							return (
-								<Col>
+								<Col key={idx}>
 									<img src={item} alt="Images" />
 								</Col>
 							);

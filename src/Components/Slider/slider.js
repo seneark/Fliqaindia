@@ -40,7 +40,7 @@ export default class Responsive extends Component {
 			infinite: !!this.state.center,
 			speed: 500,
 			slidesToShow: this.state.center ? 3 : 5,
-			slidesToScroll: this.state.center ? 2 : 2,
+			slidesToScroll: this.state.center ? 1 : 2,
 			initialSlide: 0,
 			arrows: true,
 			centerMode: this.state.center,
@@ -97,7 +97,7 @@ export default class Responsive extends Component {
 						<Slider {...settings}>
 							{this.props.imgs.map((item, idx) => {
 								return (
-									<div>
+									<div key={idx}>
 										<div style={{
 											maxWidth: this.props.imgWidth,
 											maxHeight: this.props.imgHeight,
@@ -121,7 +121,7 @@ export default class Responsive extends Component {
 					<Slider {...settings}>
 						{this.props.imgs.map((item, idx) => {
 							return (
-								<div
+								<div key={idx}
 									style={{
 										maxWidth: this.props.imgWidth,
 										maxHeight: this.props.imgHeight,
