@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Fliqaindia/precache-manifest.acb7d7ff920663baf0b88ac32faa826d.js"
+  "/Fliqaindia/precache-manifest.76aa05cd8d97c5c8a653dbdc78871585.js"
 );
 
 self.addEventListener('message', (event) => {

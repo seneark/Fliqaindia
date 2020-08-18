@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Fliqaindia/static/css/main.5d11e47b.chunk.css",
+    "main.css": "/Fliqaindia/static/css/main.73cf1e12.chunk.css",
     "main.js": "/Fliqaindia/static/js/main.fbc97f52.chunk.js",
     "main.js.map": "/Fliqaindia/static/js/main.fbc97f52.chunk.js.map",
     "runtime-main.js": "/Fliqaindia/static/js/runtime-main.4ba47f3e.js",
@@ -9,10 +9,10 @@
     "static/js/2.c27c6408.chunk.js": "/Fliqaindia/static/js/2.c27c6408.chunk.js",
     "static/js/2.c27c6408.chunk.js.map": "/Fliqaindia/static/js/2.c27c6408.chunk.js.map",
     "index.html": "/Fliqaindia/index.html",
-    "precache-manifest.acb7d7ff920663baf0b88ac32faa826d.js": "/Fliqaindia/precache-manifest.acb7d7ff920663baf0b88ac32faa826d.js",
+    "precache-manifest.76aa05cd8d97c5c8a653dbdc78871585.js": "/Fliqaindia/precache-manifest.76aa05cd8d97c5c8a653dbdc78871585.js",
     "service-worker.js": "/Fliqaindia/service-worker.js",
     "static/css/2.dcf1a2d3.chunk.css.map": "/Fliqaindia/static/css/2.dcf1a2d3.chunk.css.map",
-    "static/css/main.5d11e47b.chunk.css.map": "/Fliqaindia/static/css/main.5d11e47b.chunk.css.map",
+    "static/css/main.73cf1e12.chunk.css.map": "/Fliqaindia/static/css/main.73cf1e12.chunk.css.map",
     "static/js/2.c27c6408.chunk.js.LICENSE.txt": "/Fliqaindia/static/js/2.c27c6408.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/Fliqaindia/static/media/slick.f97e3bbf.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.4ba47f3e.js",
     "static/css/2.dcf1a2d3.chunk.css",
     "static/js/2.c27c6408.chunk.js",
-    "static/css/main.5d11e47b.chunk.css",
+    "static/css/main.73cf1e12.chunk.css",
     "static/js/main.fbc97f52.chunk.js"
   ]
 }
