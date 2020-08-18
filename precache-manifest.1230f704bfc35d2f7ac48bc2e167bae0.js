@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "770ba98857b184fcf1fd6e4c080a2160",
+    "revision": "a2df1db124dc7172081be6a3d84f495e",
     "url": "/Fliqaindia/index.html"
   },
   {
