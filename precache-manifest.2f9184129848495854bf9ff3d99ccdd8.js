@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4f524a9316ae703887c093d6d07f5d5",
+    "revision": "377e3ca793cf6a33edd3d0501cfd482d",
     "url": "/Fliqaindia/index.html"
   },
   {
-    "revision": "1dfa374db269073695ba",
+    "revision": "39c4e76c0c3a05fab16d",
     "url": "/Fliqaindia/static/css/2.dcf1a2d3.chunk.css"
   },
   {
-    "revision": "85f19771bbb189823e8a",
+    "revision": "f787c2cb7dcdcf5d4182",
     "url": "/Fliqaindia/static/css/main.a656eb6f.chunk.css"
   },
   {
-    "revision": "1dfa374db269073695ba",
-    "url": "/Fliqaindia/static/js/2.c27c6408.chunk.js"
+    "revision": "39c4e76c0c3a05fab16d",
+    "url": "/Fliqaindia/static/js/2.34193285.chunk.js"
   },
   {
     "revision": "ac708def751a8292e55daf5717e57737",
-    "url": "/Fliqaindia/static/js/2.c27c6408.chunk.js.LICENSE.txt"
+    "url": "/Fliqaindia/static/js/2.34193285.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85f19771bbb189823e8a",
-    "url": "/Fliqaindia/static/js/main.40551dbf.chunk.js"
+    "revision": "f787c2cb7dcdcf5d4182",
+    "url": "/Fliqaindia/static/js/main.1f348451.chunk.js"
   },
   {
     "revision": "c1a8f972023eb22d7ff2",
